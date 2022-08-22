@@ -5,6 +5,12 @@ import { Component } from '@angular/core';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
+
 export class AppComponent {
-  title = 'angular-tutorial';
+  showText: boolean = false;
+  fontSizePx: number = 16;
+
+  toggleShowText(): void {
+    this.showText = !this.showText;
+  }
 }

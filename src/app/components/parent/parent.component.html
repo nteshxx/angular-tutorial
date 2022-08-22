@@ -1,0 +1,5 @@
+<h1>Components Communication Example:</h1>
+<app-child [inputMessage]="'This is a message from parent'" (messageEvent)="receiveMessage($event)">
+    <h2 question>Is ng-content cool?</h2>
+    <h3 answer>Yeah, It is!</h3>
+</app-child>
